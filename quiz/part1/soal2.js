@@ -49,11 +49,10 @@ function dataHandling2(input) {
             console.log("Bulan tidak ditemukan");
             break;
     }
-    let arrBulan = bulan.split(" ");
     let ttlBaru = [...ttl];
     tanpaBulan = ttlBaru.splice(1,1);
     let ttlReverse = ttlBaru.reverse();
-    ttlBaru.push(...arrBulan);
+    ttlBaru.push(bulan);
     console.log(ttlReverse);
     let ttlJoin = ttl.join("-");
     console.log(ttlJoin);
